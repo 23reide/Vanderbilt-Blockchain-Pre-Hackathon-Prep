@@ -39,9 +39,8 @@ REQUIRED Follow me on [X (@RuohanDeQuant)](https://x.com/RuohanDeQuant).
 ### 3. Deploy Smart Contract
 
 1. Open [Remix IDE](https://remix.ethereum.org/).
-2. Copy the smart contract from this repo.
-3. Copy the smart contract from this repo.
-3. Compile & deploy to **Sepolia** using MetaMask.
+2. Copy the smart contract from this repo (message.sol). Paste into Remix IDE in a new file.
+3. Compile & deploy to **Sepolia** using MetaMask (Deploy & Run Transactions > Evironment > Browser Extension > Sepolia Testnet - MetaMask > Deploy).
 4. Save the **contract address** and **ABI**.
 5. Leave a message about what merch we should get (Quarterzip, Hoodie, Polo)
 
@@ -50,7 +49,7 @@ REQUIRED Follow me on [X (@RuohanDeQuant)](https://x.com/RuohanDeQuant).
 ### 4. Get Testnet ETH
 
 * Add **Sepolia testnet** in MetaMask.
-* Use a [Sepolia faucet](https://sepoliafaucet.com/).
+* Use a [Sepolia faucet](https://sepoliafaucet.com/). (Just skip this)
 * If needed, ask @ruohanchen on Telegram for funds. (You'll have to give me your public address)
 
 ---
@@ -80,6 +79,15 @@ npm install wagmi
 
 * Sign up at [Alchemy](https://alchemy.com/) (or Infura).
 * Create a Sepolia app.
+MetaMask/Infura info
+API key 39093ef9560248f98bf80f2fa3ef4f73
+HTTPS https://mainnet.infura.io/v3/39093ef9560248f98bf80f2fa3ef4f73
+Send request
+curl --url https://mainnet.infura.io/v3/39093ef9560248f98bf80f2fa3ef4f73 \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+
 * Copy your **HTTP RPC URL**.
 
 Create a `.env.local` file:
@@ -153,8 +161,8 @@ Now your dApp is live on a free Vercel domain 🎉
 
 ## ✅ Milestones
 
-* [ ] Repo cloned & environment ready
-* [ ] Smart contract deployed on Sepolia
+* [x] Repo cloned & environment ready
+* [x] Smart contract deployed on Sepolia
 * [ ] Next.js app scaffolded
 * [ ] RPC key integrated with Viem
 * [ ] Smart contract interaction successful
