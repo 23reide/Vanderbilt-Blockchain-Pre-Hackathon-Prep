@@ -163,8 +163,8 @@ Now your dApp is live on a free Vercel domain 🎉
 
 * [x] Repo cloned & environment ready
 * [x] Smart contract deployed on Sepolia
-* [ ] Next.js app scaffolded
-* [ ] RPC key integrated with Viem
+* [x] Next.js app scaffolded
+* [x] RPC key integrated with Viem
 * [ ] Smart contract interaction successful
 * [ ] PR created & merged
 * [ ] App deployed on Vercel 🚀

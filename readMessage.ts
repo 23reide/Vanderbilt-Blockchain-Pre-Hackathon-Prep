@@ -1,5 +1,5 @@
-import { client } from './client'
-import contractAbi from '../../../abi.json'
+import { client } from './utils/client'
+import contractAbi from './abi.json'
 
 const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS!
 
